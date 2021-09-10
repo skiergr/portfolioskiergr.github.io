@@ -158,14 +158,8 @@ window.addEventListener('load', () => {
         setIcons(dayTwo[3], document.querySelector('.icon2'));
         setIcons(dayThree[3], document.querySelector('.icon3'));
 
-        const {
-          temperature,
-          summary,
-          icon,
-          windSpeed,
-          windGust,
-          humidity,
-        } = responseData.currently;
+        const { temperature, summary, icon, windSpeed, windGust, humidity } =
+          responseData.currently;
         temperatureDegree.textContent = Math.floor(temperature);
         weatherDescription.textContent = summary;
         locationTimezone.textContent = responseData.timezone
